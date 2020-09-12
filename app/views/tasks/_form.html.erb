@@ -25,6 +25,16 @@
   </p>
 
   <p>
+    <%= form.label :due_date %><br>
+    <%= form.datetime_field :due_date %>
+  </p>
+
+  <p>
+    <%= form.label :completed %><br>
+    <%= form.check_box :completed %>
+  </p>
+
+  <p>
     <%= form.submit %>
   </p>
 

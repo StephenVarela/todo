@@ -44,6 +44,6 @@ class TasksController < ApplicationController
   def permitted_params
     params
       .require(:task)
-      .permit(:title, :description)
+      .permit(:title, :description, :due_date, :completed)
   end
 end

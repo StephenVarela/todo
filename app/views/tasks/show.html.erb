@@ -8,8 +8,18 @@
   <%= @task.description %>
 </p>
 
-<%= link_to 'Back', tasks_path %>
-<td><%= link_to 'Edit', edit_task_path(@task) %></td>
-<td><%= link_to 'Destroy', task_path(@task),
+<p>
+  <strong>Due at:</strong>
+  <%= @task.due_date %>
+</p>
+
+<p>
+  <strong>Completed?</strong>
+  <%= @task.completed %>
+</p>
+
+<%= link_to 'All Deeds', tasks_path %>
+<td><%= link_to 'Edit Deed', edit_task_path(@task) %></td>
+<td><%= link_to 'Destroy Deed', task_path(@task),
         method: :delete,
         data: { confirm: 'Are you sure?' } %></td>
