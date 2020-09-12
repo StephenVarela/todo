@@ -23,6 +23,8 @@ class TasksController < ApplicationController
   end
 
   def update
+    @task = Task.find_by(id: params[:id])
+    
     if @task.update(permitted_params)
       redirect_to @task
     else
