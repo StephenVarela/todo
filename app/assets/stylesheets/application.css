@@ -25,3 +25,9 @@ table {
 th {
   height: 50px;
 }
+
+.Item{
+  width: 100%; 
+  text-align: center;
+  border: 1px solid black;
+}
