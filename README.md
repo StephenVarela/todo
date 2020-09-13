@@ -6,14 +6,18 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+- 2.5.1
 
 * System dependencies
 
 * Configuration
 
 * Database creation
+- Postgresql
 
 * Database initialization
+- bundle exec rake db:setup
+- bundle exec rake db:migrate
 
 * How to run the test suite
 
