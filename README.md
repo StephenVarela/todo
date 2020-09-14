@@ -20,6 +20,7 @@ Things you may want to cover:
 - bundle exec rake db:migrate
 
 * How to run the test suite
+- bundle exec rspec spec
 
 * Services (job queues, cache servers, search engines, etc.)
 
